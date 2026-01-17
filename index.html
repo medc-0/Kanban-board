@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+  <div class="container">
+    <h1>Kanban board</h1>
 
-    <link rel="stylesheet" href="src/styles/base.css" />
-    <link rel="stylesheet" href="src/styles/layout.css" />
-    <link rel="stylesheet" href="src/styles/components.css" />
-  </head>
-  <body>
-    <main class="main__content">
-      <h1>Hello World!</h1>
-    </main>
+    <div class="board"></div>
 
-    <script type="module" src="src/scripts/index.js"></script>
-  </body>
+    <!-- LIST 1 -->
+    <div class="list" id="list1"></div>
+      <h2>To do</h2>
+      <div class="card" draggable="true" id="card1">Wash dishes</div>
+      <div class="card" draggable="true" id="card2">Buy Groceries</div>
+      <div class="card" draggable="true" id="card3">Complete This Website</div>
+  </div>
+
+</body>
 </html>
